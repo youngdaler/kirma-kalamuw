@@ -1,0 +1,243 @@
+@import url(./fonts.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header__list{
+    display: flex;
+    list-style: none;
+}
+
+.header__link a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    transition: .3s ease-out;
+    position: relative;
+}
+
+.header__link a::after{
+    content: "";
+    background: #ED8E00;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: -15px;
+    left: 0;
+    border-radius: 23px 10px 0px 0px;
+    transition: .5s linear;
+    transform: scale(0);
+}
+
+ .header__link a:hover::after{
+    display: block;
+    transition: .2s linear;
+    transform: scale(1);
+}
+
+.header__link a:hover{
+    color: rgb(252, 174, 6);
+    transition: .3s ease-out;
+    font-size: 20px;
+}
+
+.header__content img{
+    cursor: pointer;
+}
+
+.header__content p{
+    font-family: 'rob';
+    font-weight: 400;
+    font-size: 14x;
+    transition: .3s ease-out;
+    position: relative;
+}
+
+.header__content p::after{
+    content: "";
+    background: #ED8E00;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: -15px;
+    left: 0;
+    border-radius: 23px 10px 0px 0px;
+    transition: .5s linear;
+    transform: scale(0);
+}
+
+ .header__content p:hover::after{
+    display: block;
+    transition: .2s linear;
+    transform: scale(1);
+}
+
+.header__content p:hover{
+    color: rgb(252, 174, 6);
+    transition: .3s ease-out;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header__desk img{
+    width: 100%;
+}
+
+.header__desk-list{
+    text-align: center;
+    position: relative;
+    bottom: 350px;
+}
+
+.header__desk-list h1{
+    color: white;
+    font-family: 'rob';
+    font-weight: 400;
+    font-size: 43px;
+}
+
+.header__desk-list p{
+    color: white;
+    font-family: 'rob';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 20px;
+}
+
+/* ===HEADER FINISHED=== */
+
+/* ===MAIN STARTS=== */
+
+.main__content{
+    text-align: center;
+    font-family: var(--rob);
+}
+
+.main__title{
+    color: black;
+    font-size: 43px;
+}
+
+.main__text{
+    color: #A0A0A0;
+    font-size: 14px;
+    margin-top: 23px;
+    margin-bottom: 26px;
+}
+
+.main__title2{
+    color: black;
+    font-size: 13px;
+}
+
+.main__table{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(max-content, 750px);
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+.products__block{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(max-content, 350px);
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+/*  */
+
+.footer{
+    height: 80px;
+    background: #000;
+    margin-top: 30px;
+}
+
+.footer__link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__list{
+    color: white;
+    font-size: 25px;
+    list-style: none;
+}
+
+.main__home{
+    background-image: url(../img/workside.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin-top: 50px;
+    color: white;
+}
+
+.main__home-text{
+    padding-top: 150px;
+}
+
+.main__home h1{
+    font-weight: lighter;
+    font-size: 45px;
+    text-align: center;
+}
+
+.main__home h2{
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main__home p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.made__way h1{
+    font-weight: lighter;
+    text-align: center;
+}
+
+.made__way p{
+    color: #A0A0A0;
+    width: 777px;
+    position: relative;
+    left: 300px;
+    text-align: center;
+}
+
+.made__way img{
+    position: relative;
+    left: 150px;
+}
